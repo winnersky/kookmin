@@ -1,6 +1,8 @@
 # coding: UTF-8
 # Chinese Zodiac
 
+# input 함수로 받은 데이터의 타입 = 문자열
+# int: integer로 변환해주는 변환 함수
 year = int(input("Enter a year: "))
 
 if year % 12 == 8:
@@ -28,4 +30,4 @@ elif year % 12 == 6:
 elif year % 12 == 7:
 	animal = "토끼"
 
-print("%d is the year of the %s." % (year, animal))
+# 출력해보세요.
