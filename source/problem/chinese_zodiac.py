@@ -30,4 +30,8 @@ elif year % 12 == 6:
 elif year % 12 == 7:
 	animal = "토끼"
 
-# 출력해보세요.
+# 출력해보세n요.
+#n 쥐 띠입니다
+print(animal)
+
+print(animal + "띠입니다.")

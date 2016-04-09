@@ -14,3 +14,12 @@ morse = {
 code = '.... .  ... .-.. . . .--. ...  . .- .-. .-.. -.--'
 
 # Write your code below.
+split_code = code.split()
+
+# res = [] 
+
+for co in split_code:
+    # res.append(morse.get(co))
+    print(morse.get(co), end=" ")
+
+# print(res)

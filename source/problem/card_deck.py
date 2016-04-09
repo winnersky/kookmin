@@ -17,3 +17,13 @@ back = [
 	'K',  # King
 	'A',  # Ace
 ]
+
+res = []
+# Write your code below.
+for i in front:
+  for j in back:
+    res.append(i+j)
+
+cnt = len(res)
+print(res)
+print("count : "+str(cnt))

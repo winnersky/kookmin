@@ -5,3 +5,6 @@
 s = 'We propose to start by making it possible to teach programming in Python, \
 an existing scripting language, and to focus on creating \
 a new development environment and teaching materials for it.'
+
+slist = s.lower().replace('.','').replace(',','').split()
+print(slist.count("to"))

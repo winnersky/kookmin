@@ -1,4 +1,3 @@
-# coding: UTF-8
 # 미국의 주의 수도를 찾는 함수를 만드세요.
 
 STATES_CAPITALS = {
@@ -55,11 +54,14 @@ STATES_CAPITALS = {
 }
 
 # Write your code below.
-def get_capital(capital):
-    if capital not in STATES_CAPITALS:
-        print("Not Found!")
-    else:
-        print(STATES_CAPITALS.get(capital))
+def find_capital(name=''):
+    try:
+        if not name:
+            raise ValueError('Empty Value')
+        else:
+            print(STATES_CAPITALS.get(name))
+    except ValueError as e:
+        print(e)
 
-get_capital("capital")
-get_capital("Utah")
+if __name__ == '__main__':
+    find_capital()
